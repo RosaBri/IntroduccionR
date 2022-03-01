@@ -1,0 +1,80 @@
+---
+title: "introduccionR"
+author: "Rosa Brinoles"
+date: "26/2/2022"
+output:
+ html_document:
+    fig_height: 6
+    fight_width: 8
+    theme: journal
+    highlight: zenburn
+    toc: yes
+    toc_depht: 4
+    toc_float:
+      collapsed: no
+      smooth_scroll: yes
+      
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+```
+
+## Deber de introduccion a R
+
+```{r Ejercicio 1}
+# Ejercicio 1:
+
+ciudad <- "Los Teques"
+
+print(ciudad)
+
+```
+
+```{r Ejerc2}
+
+# Ejercicio2:
+
+ciudades_Aragua <- c("Las Tejerias", "La Victoria", "Maracay", "El Limon", "Camatagua", "El Consejo", "Turmero")
+
+print(ciudades_Aragua)
+
+```
+
+```{r Ejerc3}
+
+### Ejercicio3:
+
+Datos_Animales = data.frame(num_Animales = paste0("N.Animales", 1:12), Especies = c("Gatos", "Perros", "Gallina", "Vaca", "Loro", "Pato", "Gallo", "Chancho", "Toro", "Cisne", "Buho", "Gabilan"), Hogar = c("Casa", "Casa", "Campo", "Campo", "Selva", "Campo", "Selva", "Selva", "Campo", "Campo", "Campo", "Todos lados"), Cantidad = sample(1:10, 12, replace = TRUE), lista_Animales =sample(1:12, 12, replace = TRUE) )
+
+Datos_Animales
+```
+
+```{r Ejerc41}
+
+# Ejercicio 4.1:
+
+# dataset "DNase"
+?DNase
+
+print(head(DNase, 4))
+
+concentration_1 = subset(DNase, conc >= 0.1 & conc <= 0.2)
+
+print(concentration_1)
+
+```
+```{r Ejerc42}
+
+# Ejercicio 4.2:
+
+# dataset "DNase"
+
+?DNase
+
+concentration_2 = subset(DNase, Run != 5 & conc > 0.2 & density <= 1.0)
+
+print(concentration_2)
+
+```
