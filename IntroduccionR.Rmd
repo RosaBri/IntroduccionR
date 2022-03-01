@@ -1,6 +1,6 @@
 ---
 title: "introduccionR"
-author: "Rosa Brinoles"
+author: "Rosa Briñoles"
 date: "26/2/2022"
 output:
  html_document:
